@@ -13,6 +13,7 @@ if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
 from app.core.config import settings
+import app.models  # noqa: F401
 from app.db import Base
 
 # this is the Alembic Config object, which provides
